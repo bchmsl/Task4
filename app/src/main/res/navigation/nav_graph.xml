@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chooserFragment">
+
+    <fragment
+        android:id="@+id/chooserFragment"
+        android:name="com.bchmsl.task4.ui.ChooserFragment"
+        android:label="fragment_chooser"
+        tools:layout="@layout/fragment_chooser" >
+        <action
+            android:id="@+id/action_chooserFragment_to_ticTacToeFragment"
+            app:destination="@id/ticTacToeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticTacToeFragment"
+        android:name="com.bchmsl.task4.ui.TicTacToeFragment"
+        android:label="fragment_tic_tac_toe"
+        tools:layout="@layout/fragment_tic_tac_toe" >
+        <argument
+            android:name="spanCount"
+            app:argType="integer"
+            android:defaultValue="3" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_3x3">Start 3x3</string>
+    <string name="start_4x4">Start 4x4</string>
+    <string name="start_5x5">Start 5x5</string>
+</resources>
